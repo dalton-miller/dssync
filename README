@@ -1,0 +1,18 @@
+This is a command line utility for backing up your dotfiles to Dropbox.
+
+The main Python script is pre-compiled into bytecode for security reasons,
+because if I didn't, people could steal the app key and delete
+your backups or access your stuff.
+
+The setup script needs your sudo password to copy it's executable to /usr/bin,
+you can look at the script yourself if you'd like.
+
+To install:
+chmod +x setup.sh
+./setup.sh install
+
+To remove:
+./setup.sh remove
+
+To use after install:
+ssync help #Shows you everything you need to know
